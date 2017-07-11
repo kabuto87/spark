@@ -9,12 +9,12 @@ import java.util.List;
 
 public class PostService {
 
-    private final DB db;
+    private final DB database;
     private final DBCollection collection;
 
-    public PostService(DB db) {
-        this.db = db;
-        this.collection = db.getCollection("posts");
+    public PostService(DB database) {
+        this.database = database;
+        this.collection = database.getCollection("posts");
     }
 
     public List<Post> find() {
