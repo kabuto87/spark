@@ -7,11 +7,17 @@ apply plugin: 'jetty'
 sourceCompatibility = 1.8
 
 repositories {
+    maven {
+        url "http://bitbucket.org/atlassian/localstack/raw/mvn/release"
+    }
     mavenCentral()
 }
 
 dependencies {
+    compile ('com.amazonaws:aws-java-sdk:1.11.162')
+    compile ('com.atlassian:localstack-utils:1.0-SNAPSHOT')
     compile ('com.sparkjava:spark-core:2.6.0')
+    compile ('com.sparkjava:spark-debug-tools:0.5')
     compile ('org.slf4j:slf4j-simple:1.7.21')
     compile ('org.mongodb:mongo-java-driver:2.11.3')
     compile ('com.google.code.gson:gson:2.2.4')

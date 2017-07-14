@@ -33,7 +33,7 @@ hs_err_pid*
 build/
 /build/
 
-# Ignore Gradle GUI config
+# Ignore Gradle GUI uk.gov.ros.config
 gradle-app.setting
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
